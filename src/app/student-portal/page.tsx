@@ -27,37 +27,42 @@ export default function StudentPortalPage() {
   const actionItems = [
     {
       title: "Temporary Clearance",
+      description: "Manage your academic clearance.",
       icon: <FileText className="h-8 w-8 text-primary" />,
       href: "#",
     },
     {
-      title: "Apply for Student Card",
+      title: "Student Card",
+      description: "Apply for a new or replacement card.",
       icon: <CreditCard className="h-8 w-8 text-primary" />,
       href: "#",
     },
     {
-      title: "Apply for Transport Card",
+      title: "Transport Card",
+      description: "Manage your campus transport access.",
       icon: <Ticket className="h-8 w-8 text-primary" />,
       href: "#",
     },
     {
       title: "Scholarships",
+      description: "Explore and apply for funding.",
       icon: <GraduationCap className="h-8 w-8 text-primary" />,
       href: "#",
     },
     {
       title: "Upload Slips",
+      description: "Submit your payment and documents.",
       icon: <Upload className="h-8 w-8 text-primary" />,
       href: "#",
     },
   ];
 
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <div className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Student Portal</h1>
-          <p className="mt-2 text-lg max-w-2xl mx-auto">Welcome, {studentData.name}!</p>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Your Student Dashboard</h1>
+          <p className="mt-2 text-lg max-w-2xl mx-auto">Welcome back, {studentData.name}!</p>
         </div>
       </div>
       <main className="container mx-auto px-4 py-12">
@@ -121,7 +126,7 @@ export default function StudentPortalPage() {
                             </div>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-muted-foreground text-sm">Proceed to view details and apply.</p>
+                            <p className="text-muted-foreground text-sm">{item.description}</p>
                         </CardContent>
                     </Card>
                 </Link>

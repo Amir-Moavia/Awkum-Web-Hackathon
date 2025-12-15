@@ -28,7 +28,7 @@ export default function AcademicsPage() {
   const currentGpa = 3.85; // Mock data
 
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <section className="relative h-48 w-full flex items-center justify-center text-center text-white">
         <Image
           src="https://picsum.photos/seed/academics_hero/1200/400"
@@ -41,9 +41,9 @@ export default function AcademicsPage() {
         <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">
-            Academic Portal
+            Your Academic Journey
           </h1>
-          <p className="mt-2 text-lg text-primary-foreground/90">Welcome, Student!</p>
+          <p className="mt-2 text-lg text-primary-foreground/90">Track your progress and celebrate your achievements.</p>
         </div>
       </section>
 
@@ -56,7 +56,7 @@ export default function AcademicsPage() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{currentGpa.toFixed(2)}</div>
-              <p className="text-xs text-muted-foreground">Maintained across all semesters</p>
+              <p className="text-xs text-muted-foreground">A testament to your hard work.</p>
             </CardContent>
           </Card>
           <Card>
@@ -66,7 +66,7 @@ export default function AcademicsPage() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{completedCredits}</div>
-              <p className="text-xs text-muted-foreground">Out of {totalCredits} required for graduation</p>
+              <p className="text-xs text-muted-foreground">Of {totalCredits} required for graduation.</p>
             </CardContent>
           </Card>
           <Card>
@@ -83,8 +83,8 @@ export default function AcademicsPage() {
         
         <Card>
           <CardHeader>
-            <CardTitle>Current & Past Courses</CardTitle>
-            <CardDescription>A summary of your academic performance in each course.</CardDescription>
+            <CardTitle>Course Dashboard</CardTitle>
+            <CardDescription>An overview of your academic performance and current standing.</CardDescription>
           </CardHeader>
           <CardContent>
             <Table>

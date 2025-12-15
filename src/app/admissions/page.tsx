@@ -20,7 +20,7 @@ export default function AdmissionsPage() {
         { event: "Enrollment Deposit Due", date: "May 1, 2025" },
     ];
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <section className="relative h-48 w-full flex items-center justify-center text-center text-white">
         <Image
           src="https://picsum.photos/seed/admissions_hero/1200/400"
@@ -33,18 +33,18 @@ export default function AdmissionsPage() {
         <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">
-            Admissions
+            Begin Your Legacy
           </h1>
-          <p className="mt-2 text-lg text-primary-foreground/90">Your future starts here.</p>
+          <p className="mt-2 text-lg text-primary-foreground/90">Join a community of innovators and leaders.</p>
         </div>
       </section>
 
       <main className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold mb-6 font-headline">Application Process & Requirements</h2>
+            <h2 className="text-3xl font-bold mb-6 font-headline">Your Path to ScholarSage</h2>
             <p className="text-muted-foreground mb-8">
-                Follow these steps to complete your application to ScholarSage University. We review each application holistically, considering your academic achievements, extracurricular involvement, and personal qualities.
+                We take a holistic approach to admissions, seeking students who are passionate, curious, and eager to make an impact. Discover the steps to join our vibrant academic community.
             </p>
             <Accordion type="single" collapsible className="w-full" defaultValue="item-0">
               {admissionRequirements.map((reqCategory, index) => (
@@ -73,7 +73,7 @@ export default function AdmissionsPage() {
                 <CardHeader>
                     <CardTitle className="font-headline flex items-center gap-2">
                         <Calendar className="h-5 w-5" />
-                        Important Dates
+                        Key Admission Dates
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -90,11 +90,11 @@ export default function AdmissionsPage() {
           </div>
         </div>
         <div className="text-center mt-16 p-8 bg-secondary/50 rounded-lg">
-            <h2 className="text-3xl font-bold font-headline">Ready to Begin?</h2>
-            <p className="mt-2 text-muted-foreground max-w-xl mx-auto">Our admissions team is here to help you every step of the way. Start your application today and take the first step towards an incredible future.</p>
+            <h2 className="text-3xl font-bold font-headline">Ready to Shape Tomorrow?</h2>
+            <p className="mt-2 text-muted-foreground max-w-xl mx-auto">Your journey of a thousand miles begins with a single step. Our admissions team is ready to guide you. Take that step today.</p>
             <Button size="lg" className="mt-6 bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
                 <Link href="#">
-                    Apply Now <ArrowRight className="ml-2 h-5 w-5" />
+                    Start Your Application <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
             </Button>
         </div>

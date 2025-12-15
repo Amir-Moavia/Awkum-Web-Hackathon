@@ -43,17 +43,17 @@ export default function ContactPage() {
     console.log(values)
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
+      description: "Thank you for reaching out. We'll be in touch shortly.",
     })
     form.reset()
   }
 
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <div className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Contact Us</h1>
-          <p className="mt-2 text-lg max-w-2xl mx-auto">We're here to help. Reach out to us with any questions.</p>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Get in Touch</h1>
+          <p className="mt-2 text-lg max-w-2xl mx-auto">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
         </div>
       </div>
       <main className="container mx-auto px-4 py-16">
@@ -61,7 +61,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2">
             <Card>
                 <CardHeader>
-                    <CardTitle className="font-headline">Send us a Message</CardTitle>
+                    <CardTitle className="font-headline">Send a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <Form {...form}>
@@ -101,7 +101,7 @@ export default function ContactPage() {
                             <FormItem>
                             <FormLabel>Subject</FormLabel>
                             <FormControl>
-                                <Input placeholder="Question about admissions" {...field} />
+                                <Input placeholder="Inquiry about admissions" {...field} />
                             </FormControl>
                             <FormMessage />
                             </FormItem>
@@ -112,9 +112,9 @@ export default function ContactPage() {
                         name="message"
                         render={({ field }) => (
                             <FormItem>
-                            <FormLabel>Message</FormLabel>
+                            <FormLabel>Your Message</FormLabel>
                             <FormControl>
-                                <Textarea placeholder="Your message here..." className="min-h-[150px]" {...field} />
+                                <Textarea placeholder="Tell us more..." className="min-h-[150px]" {...field} />
                             </FormControl>
                             <FormMessage />
                             </FormItem>
@@ -129,11 +129,11 @@ export default function ContactPage() {
           <div className="space-y-8">
             <Card>
                 <CardHeader>
-                    <CardTitle className="font-headline">Contact Information</CardTitle>
+                    <CardTitle className="font-headline">Contact Details</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <div>
-                        <h3 className="font-semibold">Address</h3>
+                        <h3 className="font-semibold">Our Campus</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <MapPin className="h-4 w-4"/>
                             <span>123 University Ave, Innovation City, 10101</span>
@@ -147,14 +147,14 @@ export default function ContactPage() {
                         </div>
                     </div>
                     <div>
-                        <h3 className="font-semibold">Email Address</h3>
+                        <h3 className="font-semibold">Email</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <Mail className="h-4 w-4"/>
                             <a href="mailto:contact@scholarsage.edu" className="hover:text-primary">contact@scholarsage.edu</a>
                         </div>
                     </div>
                     <div>
-                        <h3 className="font-semibold">Official Website</h3>
+                        <h3 className="font-semibold">Website</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                              <Globe className="h-4 w-4"/>
                              <a href="https://scholarsage.edu" target="_blank" rel="noopener noreferrer" className="hover:text-primary">scholarsage.edu</a>

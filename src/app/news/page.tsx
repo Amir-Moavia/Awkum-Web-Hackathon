@@ -22,12 +22,12 @@ export default function NewsPage() {
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <div className="bg-secondary/50 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">News & Announcements</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Campus Headlines</h1>
           <p className="mt-2 text-lg max-w-2xl mx-auto text-muted-foreground">
-            Stay up-to-date with the latest happenings at ScholarSage.
+            The latest stories, events, and updates from the heart of ScholarSage.
           </p>
         </div>
       </div>
@@ -86,7 +86,8 @@ export default function NewsPage() {
         </div>
          {filteredNews.length === 0 && (
             <div className="text-center py-16 text-muted-foreground">
-                <p className="text-lg font-semibold">No items found for this category.</p>
+                <p className="text-lg font-semibold">No items match your filter.</p>
+                <p>Try selecting another category.</p>
             </div>
         )}
       </main>

@@ -29,7 +29,7 @@ export default function FacultyProfilePage({ params }: FacultyPageProps) {
   `;
 
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
        <div className="bg-secondary/50">
         <div className="container mx-auto px-4 py-12">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
@@ -68,7 +68,7 @@ export default function FacultyProfilePage({ params }: FacultyPageProps) {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader>
-                <CardTitle className="font-headline">Biography</CardTitle>
+                <CardTitle className="font-headline">About Dr. {professor.name.split(' ').slice(1).join(' ')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-base leading-relaxed whitespace-pre-wrap">
@@ -81,7 +81,7 @@ export default function FacultyProfilePage({ params }: FacultyPageProps) {
             
             <Card>
               <CardHeader>
-                <CardTitle className="font-headline">Publications</CardTitle>
+                <CardTitle className="font-headline">Selected Publications</CardTitle>
               </CardHeader>
               <CardContent>
                  <ul className="space-y-4">
@@ -90,7 +90,7 @@ export default function FacultyProfilePage({ params }: FacultyPageProps) {
                             <Book className="h-5 w-5 text-primary mt-1 shrink-0"/>
                             <div>
                                 <h4 className="font-semibold">{pub.title}</h4>
-                                <a href={pub.link} className="text-sm text-primary/80 hover:underline flex items-center gap-1">
+                                <a href={pub.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary/80 hover:underline flex items-center gap-1">
                                     View Publication <LinkIcon className="h-3 w-3"/>
                                 </a>
                             </div>
@@ -104,7 +104,7 @@ export default function FacultyProfilePage({ params }: FacultyPageProps) {
           <div className="lg:col-span-1">
              <Card className="sticky top-24">
                 <CardHeader>
-                    <CardTitle className="font-headline">Research Interests</CardTitle>
+                    <CardTitle className="font-headline">Areas of Expertise</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="flex flex-wrap gap-2">

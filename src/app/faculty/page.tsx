@@ -26,12 +26,12 @@ export default function FacultyPage() {
     });
 
   return (
-    <div className="animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <div className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Faculty</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Meet Our Esteemed Faculty</h1>
           <p className="mt-2 text-lg max-w-2xl mx-auto">
-            Meet the brilliant minds shaping the future of education and research.
+            The brilliant minds shaping the future of education, research, and innovation.
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function FacultyPage() {
         {viceChancellor && (
           <>
             <div className="mb-12 flex flex-col items-center">
-              <h2 className="text-3xl font-bold text-center mb-8 font-headline">From the Vice Chancellor's Desk</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 font-headline">A Message from the Vice Chancellor</h2>
               <Link href={`/faculty/${viceChancellor.id}`} className="w-full max-w-lg">
                 <Card className="group text-center overflow-hidden h-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
                   <div className="relative h-80 w-full">
@@ -68,7 +68,7 @@ export default function FacultyPage() {
           <div className="relative flex-grow">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input 
-              placeholder="Search by name or keyword..."
+              placeholder="Search faculty by name or department..."
               className="pl-10"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}

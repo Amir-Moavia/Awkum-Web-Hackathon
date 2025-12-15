@@ -13,32 +13,32 @@ export default function Home() {
   const features = [
     {
       title: "Admissions",
-      description: "Everything you need to start your journey with us.",
+      description: "Start your journey and discover your potential.",
       href: "/admissions",
       icon: <GraduationCap className="h-8 w-8 text-primary" />,
     },
     {
       title: "Academics",
-      description: "Explore our programs and track your progress.",
+      description: "Explore our diverse programs and courses.",
       href: "/academics",
       icon: <BookOpen className="h-8 w-8 text-primary" />,
     },
     {
-      title: "Faculty",
-      description: "Meet our world-class educators and researchers.",
+      title: "Our Faculty",
+      description: "Learn from world-class educators and researchers.",
       href: "/faculty",
       icon: <Users className="h-8 w-8 text-primary" />,
     },
     {
-      title: "News & Events",
-      description: "Stay updated with the latest from campus.",
+      title: "Campus News",
+      description: "Stay current with the latest events and stories.",
       href: "/news",
       icon: <Newspaper className="h-8 w-8 text-primary" />,
     },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen animate-in slide-in-from-bottom-4 duration-700 ease-out">
+    <div className="flex flex-col min-h-screen animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <main className="flex-1">
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-white">
           <Image
@@ -55,11 +55,11 @@ export default function Home() {
               WELCOME TO AWKUM
             </h1>
             <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow">
-              Empowering the next generation of leaders, innovators, and thinkers.
+              Fostering Excellence, Inspiring Innovation, and Shaping Future Leaders.
             </p>
             <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/admissions">
-                Start Your Application <ArrowRight className="ml-2 h-5 w-5" />
+                Begin Your Journey <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {features.map((feature) => (
                 <Link href={feature.href} key={feature.title} className="group">
-                  <Card className="h-full text-center hover:bg-card/80 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                  <Card className="h-full text-center hover:bg-card/80 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
                     <CardHeader>
                       <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                         {feature.icon}
@@ -89,11 +89,11 @@ export default function Home() {
 
         <section id="news" className="py-16 sm:py-24 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 font-headline">Latest News & Events</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 font-headline">Latest Campus Headlines</h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {latestNews.map((item) => (
                 <Link href="/news" key={item.id}>
-                  <Card className="group overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                  <Card className="group overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
                     <div className="relative h-48 w-full">
                       <Image
                         src={item.image}
@@ -119,7 +119,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-12">
               <Button asChild variant="outline">
-                <Link href="/news">View All News</Link>
+                <Link href="/news">Explore All News</Link>
               </Button>
             </div>
           </div>
@@ -127,11 +127,11 @@ export default function Home() {
 
         <section id="faculty-spotlight" className="py-16 sm:py-24 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 font-headline">Meet Our Faculty</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 font-headline">Faculty Spotlight</h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {featuredFaculty.map((prof) => (
                 <Link href={`/faculty/${prof.id}`} key={prof.id}>
-                  <Card className="group text-center overflow-hidden h-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                  <Card className="group text-center overflow-hidden h-full transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
                     <div className="relative h-56 w-full">
                       <Image
                         src={prof.image}
@@ -153,7 +153,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <Button asChild>
                 <Link href="/faculty">
-                  Explore All Faculty
+                  Meet All Faculty
                 </Link>
               </Button>
             </div>
