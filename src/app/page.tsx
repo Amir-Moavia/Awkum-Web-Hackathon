@@ -52,7 +52,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-primary/50" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-shadow-lg font-headline">
-              WELCOME TO SCHOLARSAGE
+              WELCOME TO AWKUM
             </h1>
             <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow">
               Empowering the next generation of leaders, innovators, and thinkers.
