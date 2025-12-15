@@ -150,14 +150,14 @@ export default function ContactPage() {
                         <h3 className="font-semibold">Email</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <Mail className="h-4 w-4"/>
-                            <a href="mailto:contact@scholarsage.edu" className="hover:text-primary">contact@scholarsage.edu</a>
+                            <a href="mailto:contact@awkum.edu" className="hover:text-primary">contact@awkum.edu</a>
                         </div>
                     </div>
                     <div>
                         <h3 className="font-semibold">Website</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                              <Globe className="h-4 w-4"/>
-                             <a href="https://scholarsage.edu" target="_blank" rel="noopener noreferrer" className="hover:text-primary">scholarsage.edu</a>
+                             <a href="https://awkum.edu" target="_blank" rel="noopener noreferrer" className="hover:text-primary">awkum.edu</a>
                         </div>
                     </div>
                 </CardContent>

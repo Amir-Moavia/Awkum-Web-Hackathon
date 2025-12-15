@@ -27,7 +27,7 @@ export default function NewsPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">Campus Headlines</h1>
           <p className="mt-2 text-lg max-w-2xl mx-auto text-muted-foreground">
-            The latest stories, events, and updates from the heart of ScholarSage.
+            The latest stories, events, and updates from the heart of AWKUM.
           </p>
         </div>
       </div>

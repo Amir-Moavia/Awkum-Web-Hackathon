@@ -7,10 +7,10 @@ export const faculty: Faculty[] = [
     title: 'Vice Chancellor',
     department: 'Office of the Vice Chancellor',
     image: 'https://picsum.photos/seed/vc/400/400',
-    email: 'j.ahmed@scholarsage.edu',
+    email: 'j.ahmed@awkum.edu',
     isVc: true,
     profile: {
-      bio: "Prof. Dr. Jamil Ahmed is the esteemed Vice Chancellor of ScholarSage University. With a distinguished career in academia and leadership, he has been instrumental in guiding the university towards excellence in research and education. His vision is to establish the university as a hub of innovation and a center for producing future leaders.",
+      bio: "Prof. Dr. Jamil Ahmed is the esteemed Vice Chancellor of AWKUM University. With a distinguished career in academia and leadership, he has been instrumental in guiding the university towards excellence in research and education. His vision is to establish the university as a hub of innovation and a center for producing future leaders.",
       researchInterests: ['Higher Education Leadership', 'Academic Excellence', 'University Management', 'Research Development'],
       publications: [
         { title: 'A Vision for Modern Higher Education', link: '#' },
@@ -24,7 +24,7 @@ export const faculty: Faculty[] = [
     title: 'Professor',
     department: 'Computer Science',
     image: 'https://picsum.photos/seed/faculty1/400/400',
-    email: 'hashim@scholarsage.edu',
+    email: 'hashim@awkum.edu',
     profile: {
       bio: "Dr. Hashim is a leading expert in artificial intelligence and machine learning. With over 20 years of experience in academia and industry, his research focuses on developing scalable and ethical AI systems. He has published over 150 papers in top-tier journals and conferences and holds several patents in neural network architecture. Dr. Hashim is passionate about mentoring the next generation of computer scientists and is the recipient of the University's Distinguished Teaching Award.",
       researchInterests: ['Deep Learning', 'Ethical AI', 'Natural Language Processing', 'Computer Vision'],
@@ -41,7 +41,7 @@ export const faculty: Faculty[] = [
     title: 'Professor',
     department: 'Computer Science',
     image: 'https://picsum.photos/seed/faculty2/400/400',
-    email: 'n.iqbal@scholarsage.edu',
+    email: 'n.iqbal@awkum.edu',
     profile: {
       bio: "Dr. Nadeem Iqbal's work is at the forefront of quantum computing and theoretical physics. His research group explores the fundamental properties of quantum mechanics and its applications in next-generation computing technologies. He is known for his engaging lectures that make complex topics accessible to students.",
       researchInterests: ['Quantum Computing', 'String Theory', 'Particle Physics', 'Astrophysics'],
@@ -57,7 +57,7 @@ export const faculty: Faculty[] = [
     title: 'Professor',
     department: 'English Literature',
     image: 'https://picsum.photos/seed/faculty3/400/400',
-    email: 'a.ahmed@scholarsage.edu',
+    email: 'a.ahmed@awkum.edu',
     profile: {
       bio: 'Dr. Aftab Ahmed is a renowned scholar of contemporary literature. His work examines the intersections of identity, language, and power in contemporary fiction. He is the author of three critically acclaimed books and serves as the editor for the "Journal of Modern Literary Studies." Dr. Ahmed is a passionate advocate for the humanities and is dedicated to fostering critical thinking and analytical skills in his students.',
       researchInterests: ['Post-Colonial Theory', 'Modernist Literature', 'Feminist Criticism', 'Global South Studies'],
@@ -73,7 +73,7 @@ export const faculty: Faculty[] = [
     title: 'Professor',
     department: 'Business Administration',
     image: 'https://picsum.photos/seed/faculty4/400/400',
-    email: 'm.hayat@scholarsage.edu',
+    email: 'm.hayat@awkum.edu',
     profile: {
       bio: "Dr. Maqsood Hayat is an expert in strategic management and corporate finance. With a background in both consulting and academia, he brings a unique real-world perspective to his teaching and research. His work focuses on sustainable business models and the impact of technology on financial markets. Dr. Hayat is a board member of several corporations and a frequent commentator on economic trends.",
       researchInterests: ['Strategic Management', 'Corporate Finance', 'Sustainable Business', 'FinTech'],
@@ -88,10 +88,10 @@ export const faculty: Faculty[] = [
 export const news: News[] = [
   {
     id: 'job-fair-2025',
-    title: 'ScholarSage Job Fair 2025 — December 18',
+    title: 'AWKUM Job Fair 2025 — December 18',
     date: '2024-12-18',
     category: 'Event',
-    snippet: `ScholarSage University will be hosting its Job Fair 2025 on December 18, bringing together students and graduates from universities and colleges across the region. Participants are invited to register and connect with leading employers offering promising career and internship opportunities.\n\nOrganizations are also encouraged to join the event as official sponsors, gaining extensive visibility and direct access to a diverse pool of talented job seekers.\n\nDon’t miss this premier career event.`,
+    snippet: `AWKUM University will be hosting its Job Fair 2025 on December 18, bringing together students and graduates from universities and colleges across the region. Participants are invited to register and connect with leading employers offering promising career and internship opportunities.\n\nOrganizations are also encouraged to join the event as official sponsors, gaining extensive visibility and direct access to a diverse pool of talented job seekers.\n\nDon’t miss this premier career event.`,
     image: 'https://picsum.photos/seed/news4/600/400',
     action: {
       href: '#',
@@ -115,7 +115,7 @@ export const news: News[] = [
     title: 'Character Building Society (CBS) Collaborates with Multiomics',
     date: '2024-10-26',
     category: 'Event',
-    snippet: 'We are excited to share that Character Building Society (CBS) is now in official collaboration with Multiomics — a milestone achievement bringing advanced learning opportunities to ScholarSage University!\n\nThis collaboration opens the door for you to explore the real research world, gain valuable skills, and elevate your academic journey. 🚀',
+    snippet: 'We are excited to share that Character Building Society (CBS) is now in official collaboration with Multiomics — a milestone achievement bringing advanced learning opportunities to AWKUM University!\n\nThis collaboration opens the door for you to explore the real research world, gain valuable skills, and elevate your academic journey. 🚀',
     image: 'https://picsum.photos/seed/news5/600/400',
     action: {
       href: '#',

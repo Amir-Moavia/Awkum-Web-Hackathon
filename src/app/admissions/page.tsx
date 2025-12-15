@@ -42,7 +42,7 @@ export default function AdmissionsPage() {
       <main className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold mb-6 font-headline">Your Path to ScholarSage</h2>
+            <h2 className="text-3xl font-bold mb-6 font-headline">Your Path to AWKUM</h2>
             <p className="text-muted-foreground mb-8">
                 We take a holistic approach to admissions, seeking students who are passionate, curious, and eager to make an impact. Discover the steps to join our vibrant academic community.
             </p>

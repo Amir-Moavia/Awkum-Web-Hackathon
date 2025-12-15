@@ -19,7 +19,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Logo className="h-8 w-8 text-primary-foreground" />
-              <span className="text-xl font-bold font-headline">ScholarSage</span>
+              <span className="text-xl font-bold font-headline">AWKUM</span>
             </Link>
             <p className="text-sm text-primary-foreground/80">
               Empowering the next generation of leaders, innovators, and thinkers.
@@ -48,7 +48,7 @@ export function Footer() {
                 <a href="tel:+1234567890" className="hover:text-primary-foreground hover:underline underline-offset-4">(123) 456-7890</a>
               </li>
               <li>
-                <a href="mailto:contact@scholarsage.edu" className="hover:text-primary-foreground hover:underline underline-offset-4">contact@scholarsage.edu</a>
+                <a href="mailto:contact@scholarsage.edu" className="hover:text-primary-foreground hover:underline underline-offset-4">contact@awkum.edu</a>
               </li>
             </ul>
           </div>
@@ -70,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/70">
-          <p>&copy; {new Date().getFullYear()} ScholarSage. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AWKUM. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

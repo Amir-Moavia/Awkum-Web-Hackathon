@@ -46,7 +46,7 @@ export function Header() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Logo className="h-8 w-8 text-primary"/>
           <span className="font-bold font-headline sm:inline-block">
-            ScholarSage
+            AWKUM
           </span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -68,7 +68,7 @@ export function Header() {
                 <div className="flex flex-col p-6">
                   <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
                     <Logo className="h-8 w-8 text-primary"/>
-                    <span className="font-bold font-headline">ScholarSage</span>
+                    <span className="font-bold font-headline">AWKUM</span>
                   </Link>
                   <nav className="flex flex-col space-y-2">
                     {navLinks.map(link => <NavLink key={link.href} {...link} isMobile />)}
