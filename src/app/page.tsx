@@ -40,26 +40,26 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out">
       <main className="flex-1">
-        <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-white">
+        <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-primary-foreground">
           <Image
             src="https://picsum.photos/seed/homepage_hero/1200/800"
-            alt="University Campus"
+            alt="A vibrant university campus with modern architecture"
             data-ai-hint="university campus"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-primary/50" />
+          <div className="absolute inset-0 bg-primary/80" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-shadow-lg font-headline">
-              WELCOME TO AWKUM
+              EXPERIENCE THE FUTURE OF LEARNING AT AWKUM
             </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow">
-              Fostering Excellence, Inspiring Innovation, and Shaping Future Leaders.
+            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow text-primary-foreground/90">
+              Igniting Curiosity, Fostering Excellence, and Shaping the Leaders of Tomorrow.
             </p>
             <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/admissions">
-                Begin Your Journey <ArrowRight className="ml-2 h-5 w-5" />
+                Embark on Your Journey <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
