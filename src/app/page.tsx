@@ -42,7 +42,7 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-primary-foreground">
           <Image
-            src="/university-hero.jpg"
+            src="https://picsum.photos/seed/university_hero/1200/600"
             alt="The administration building of AWKUM university"
             data-ai-hint="university building"
             fill
