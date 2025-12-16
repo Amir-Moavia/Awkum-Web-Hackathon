@@ -133,31 +133,31 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <div>
-                        <h3 className="font-semibold">Our Campus</h3>
+                        <h3 className="font-semibold">Location</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <MapPin className="h-4 w-4"/>
-                            <span>123 University Ave, Innovation City, 10101</span>
+                            <span>Garden Campus, Abdul Wali Khan University Mardan</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="font-semibold">Phone</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <Phone className="h-4 w-4"/>
-                            <span>(123) 456-7890</span>
+                            <span>+92-937-9230801-4</span>
                         </div>
                     </div>
                     <div>
                         <h3 className="font-semibold">Email</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <Mail className="h-4 w-4"/>
-                            <a href="mailto:contact@awkum.edu" className="hover:text-primary">contact@awkum.edu</a>
+                            <a href="mailto:webadmin@awkum.edu.pk" className="hover:text-primary">webadmin@awkum.edu.pk</a>
                         </div>
                     </div>
                     <div>
                         <h3 className="font-semibold">Website</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                              <Globe className="h-4 w-4"/>
-                             <a href="https://awkum.edu" target="_blank" rel="noopener noreferrer" className="hover:text-primary">awkum.edu</a>
+                             <a href="https://awkum.edu.pk" target="_blank" rel="noopener noreferrer" className="hover:text-primary">awkum.edu.pk</a>
                         </div>
                     </div>
                 </CardContent>

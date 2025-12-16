@@ -42,13 +42,12 @@ export function Footer() {
           <div>
             <h3 className="font-semibold uppercase tracking-wider text-primary-foreground/90">Contact Us</h3>
             <ul className="mt-4 space-y-2 text-primary-foreground/80">
-              <li>123 University Ave</li>
-              <li>Innovation City, 10101</li>
+              <li>Garden Campus, Abdul Wali Khan University Mardan</li>
               <li className="pt-2">
-                <a href="tel:+1234567890" className="hover:text-primary-foreground hover:underline underline-offset-4">(123) 456-7890</a>
+                <a href="tel:+929379230801" className="hover:text-primary-foreground hover:underline underline-offset-4">+92-937-9230801-4</a>
               </li>
               <li>
-                <a href="mailto:contact@scholarsage.edu" className="hover:text-primary-foreground hover:underline underline-offset-4">contact@awkum.edu</a>
+                <a href="mailto:webadmin@awkum.edu.pk" className="hover:text-primary-foreground hover:underline underline-offset-4">webadmin@awkum.edu.pk</a>
               </li>
             </ul>
           </div>
