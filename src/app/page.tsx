@@ -57,11 +57,6 @@ export default function Home() {
             <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow text-primary-foreground/90">
               Igniting Curiosity, Fostering Excellence, and Shaping the Leaders of Tomorrow.
             </p>
-            <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
-              <Link href="/admissions">
-                Embark on Your Journey <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
           </div>
         </section>
 
