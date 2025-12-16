@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         hostname: 'volunteers-pk-live.s3-ap-southeast-1.amazonaws.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

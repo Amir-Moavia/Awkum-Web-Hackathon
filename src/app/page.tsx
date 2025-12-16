@@ -42,19 +42,19 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-primary-foreground">
           <Image
-            src="https://picsum.photos/seed/homepage_hero/1200/800"
-            alt="A vibrant university campus with modern architecture"
-            data-ai-hint="university campus"
+            src="https://storage.googleapis.com/project-spark-312151619430.appspot.com/1722428518698_0.png"
+            alt="The administration building of AWKUM university"
+            data-ai-hint="university building"
             fill
             className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-primary/80" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-shadow-lg font-headline">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-primary-foreground font-headline">
               WELCOME TO AWKUM
             </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow text-primary-foreground/90">
+            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-primary-foreground/90">
               Igniting Curiosity, Fostering Excellence, and Shaping the Leaders of Tomorrow.
             </p>
           </div>
