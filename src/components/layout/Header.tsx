@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -22,6 +22,11 @@ const navLinks = [
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const NavLink = ({ href, label, isMobile }: { href: string, label: string, isMobile?: boolean }) => {
     const isActive = pathname === href;
@@ -55,25 +60,27 @@ export function Header() {
         <div className="flex flex-1 items-center justify-end">
            
           <div className="md:hidden">
-            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">Open main menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="left">
-                <div className="flex flex-col p-6">
-                  <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                    <Logo className="h-8 w-8 text-primary"/>
-                    <span className="font-bold font-headline">AWKUM</span>
-                  </Link>
-                  <nav className="flex flex-col space-y-2">
-                    {navLinks.map(link => <NavLink key={link.href} {...link} isMobile />)}
-                  </nav>
-                </div>
-              </SheetContent>
-            </Sheet>
+            {isClient && (
+              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Open main menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left">
+                  <div className="flex flex-col p-6">
+                    <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Logo className="h-8 w-8 text-primary"/>
+                      <span className="font-bold font-headline">AWKUM</span>
+                    </Link>
+                    <nav className="flex flex-col space-y-2">
+                      {navLinks.map(link => <NavLink key={link.href} {...link} isMobile />)}
+                    </nav>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            )}
           </div>
         </div>
       </div>
