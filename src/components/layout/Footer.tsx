@@ -7,6 +7,7 @@ const navLinks = [
   { href: '/admissions', label: 'Admissions' },
   { href: '/academics', label: 'Academics' },
   { href: '/faculty', label: 'Faculty' },
+  { href: '/student-council', label: 'Student Council' },
   { href: '/news', label: 'News' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -44,10 +45,10 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-primary-foreground/80">
               <li>Garden Campus, Abdul Wali Khan University Mardan</li>
               <li className="pt-2">
-                <a href="tel:+929379230801" className="hover:text-primary-foreground hover:underline underline-offset-4">+92-937-9230801-4</a>
+                <a href="tel:+92-937-9230801-4" className="hover:text-primary-foreground hover:underline underline-offset-4">+92-937-9230801-4</a>
               </li>
               <li>
-                <a href="mailto:webadmin@awkum.edu.pk" className="hover:text-primary-foreground hover:underline underline-offset-4">webadmin@awkum.edu.pk</a>
+                <a href="mailto:webadmin@awkum.edu.pk" className="hover:text-primary-foreground hover:underline underline-offset-4">webadmin@awkum.edu,pk</a>
               </li>
             </ul>
           </div>

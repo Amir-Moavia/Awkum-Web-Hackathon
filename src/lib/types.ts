@@ -42,3 +42,9 @@ export type AdmissionRequirement = {
         details: string;
     }[];
 }
+
+export type CouncilMember = {
+  name: string;
+  title: string;
+  imageSeed: string;
+};

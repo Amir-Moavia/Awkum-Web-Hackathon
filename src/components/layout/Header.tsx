@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/admissions', label: 'Admissions' },
   { href: '/academics', label: 'Academics' },
   { href: '/faculty', label: 'Faculty' },
+  { href: '/student-council', label: 'Student Council' },
   { href: '/news', label: 'News' },
   { href: '/contact', label: 'Contact' },
 ];
