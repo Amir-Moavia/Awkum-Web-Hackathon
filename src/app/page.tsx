@@ -42,9 +42,9 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-primary-foreground">
           <Image
-            src="https://picsum.photos/seed/university_hero/1200/600"
-            alt="The administration building of AWKUM university"
-            data-ai-hint="university building"
+            src="https://picsum.photos/seed/university_hero/1200/600.jpg"
+            alt="A grand university campus with modern architecture"
+            data-ai-hint="university campus"
             fill
             className="object-cover"
             priority
@@ -94,7 +94,7 @@ export default function Home() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="object-cover transition-all duration-300 group-hover:scale-105 grayscale group-hover:grayscale-0"
                         data-ai-hint="news event"
                       />
                     </div>
