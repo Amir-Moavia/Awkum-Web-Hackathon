@@ -17,6 +17,7 @@ const navLinks = [
   { href: '/faculty', label: 'Faculty' },
   { href: '/student-council', label: 'Student Council' },
   { href: '/news', label: 'News' },
+  { href: '/presentation', label: 'Presentation' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -60,8 +61,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end">
            
-          <div className="md:hidden">
-            {isClient && (
+          {isClient && <div className="md:hidden">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
                   <Button variant="outline" size="icon">
@@ -81,8 +81,7 @@ export function Header() {
                   </div>
                 </SheetContent>
               </Sheet>
-            )}
-          </div>
+            </div>}
         </div>
       </div>
     </header>
