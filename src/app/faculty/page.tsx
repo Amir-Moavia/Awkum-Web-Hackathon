@@ -97,7 +97,7 @@ export default function FacultyPage() {
                     src={prof.image}
                     alt={`Portrait of ${prof.name}`}
                     fill
-                    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover object-top transition-all duration-300 group-hover:scale-105 grayscale group-hover:grayscale-0"
                     data-ai-hint="professional portrait"
                   />
                 </div>
