@@ -17,7 +17,6 @@ const navLinks = [
   { href: '/faculty', label: 'Faculty' },
   { href: '/student-council', label: 'Student Council' },
   { href: '/news', label: 'News' },
-  { href: '/presentation', label: 'Presentation' },
   { href: '/contact', label: 'Contact' },
 ];
 
