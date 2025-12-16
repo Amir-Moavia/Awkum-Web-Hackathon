@@ -53,9 +53,7 @@ export function Header() {
           {navLinks.map(link => <NavLink key={link.href} {...link} />)}
         </nav>
         <div className="flex flex-1 items-center justify-end">
-           <Button asChild className="hidden md:flex bg-accent hover:bg-accent/90">
-             <Link href="/admissions">Apply Now</Link>
-           </Button>
+           
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -73,9 +71,6 @@ export function Header() {
                   <nav className="flex flex-col space-y-2">
                     {navLinks.map(link => <NavLink key={link.href} {...link} isMobile />)}
                   </nav>
-                   <Button asChild className="mt-8 bg-accent hover:bg-accent/90" onClick={() => setIsMobileMenuOpen(false)}>
-                     <Link href="/admissions">Apply Now</Link>
-                   </Button>
                 </div>
               </SheetContent>
             </Sheet>
