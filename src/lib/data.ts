@@ -92,7 +92,7 @@ export const news: News[] = [
     date: '2024-12-18',
     category: 'Event',
     snippet: `AWKUM University will be hosting its Job Fair 2025 on December 18, bringing together students and graduates from universities and colleges across the region. Participants are invited to register and connect with leading employers offering promising career and internship opportunities.\n\nOrganizations are also encouraged to join the event as official sponsors, gaining extensive visibility and direct access to a diverse pool of talented job seekers.\n\nDon’t miss this premier career event.`,
-    image: 'https://picsum.photos/seed/news4/600/400',
+    image: 'https://i.imgur.com/uTak5Gj.jpeg',
     action: {
       href: '#',
       text: 'Register / Sponsor Now'
@@ -104,7 +104,7 @@ export const news: News[] = [
     date: '2025-12-10',
     category: 'News',
     snippet: 'Competition Categories:\n* Essay Writing\n* Painting Competition\n\nImportant Dates:\n* Deadline for Registration: 8 December 2025\n* Competition Date: 10 December 2025\nCompetition Time: 11:00\n\n📌 Essay Topic:\nWrite on any Human Rights–related theme.',
-    image: 'https://picsum.photos/seed/news_hr/600/400',
+    image: 'https://i.imgur.com/gK613n6.jpeg',
     action: {
       href: '#',
       text: 'Details & Registration'
@@ -116,7 +116,7 @@ export const news: News[] = [
     date: '2024-10-26',
     category: 'Event',
     snippet: 'We are excited to share that Character Building Society (CBS) is now in official collaboration with Multiomics — a milestone achievement bringing advanced learning opportunities to AWKUM University!\n\nThis collaboration opens the door for you to explore the real research world, gain valuable skills, and elevate your academic journey. 🚀',
-    image: 'https://picsum.photos/seed/news5/600/400',
+    image: 'https://i.imgur.com/5lFmE9A.jpeg',
     action: {
       href: '#',
       text: 'Register now'
