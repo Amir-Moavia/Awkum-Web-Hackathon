@@ -150,7 +150,7 @@ export default function ContactPage() {
                         <h3 className="font-semibold">Email</h3>
                         <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                             <Mail className="h-4 w-4"/>
-                            <a href="mailto:webadmin@awkum.edu.pk" className="hover:text-primary">webadmin@awkum.edu.pk</a>
+                            <a href="mailto:webadmin@awkum.edu,pk" className="hover:text-primary">webadmin@awkum.edu,pk</a>
                         </div>
                     </div>
                     <div>
@@ -159,16 +159,6 @@ export default function ContactPage() {
                              <Globe className="h-4 w-4"/>
                              <a href="https://awkum.edu.pk" target="_blank" rel="noopener noreferrer" className="hover:text-primary">awkum.edu.pk</a>
                         </div>
-                    </div>
-                </CardContent>
-            </Card>
-            <Card>
-                <CardHeader>
-                    <CardTitle className="font-headline">Campus Map</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <div className="relative h-64 w-full overflow-hidden rounded-md">
-                        <Image src="https://picsum.photos/seed/campus_map/600/400" alt="Campus map" fill className="object-cover" data-ai-hint="map illustration" />
                     </div>
                 </CardContent>
             </Card>
