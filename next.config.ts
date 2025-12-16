@@ -49,10 +49,16 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'project-spark-312151619430.appspot.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'storage.googleapis.com',
         port: '',
         pathname: '/**',
-      }
+      },
     ],
   },
 };
